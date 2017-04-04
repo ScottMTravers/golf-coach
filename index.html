@@ -16,7 +16,7 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixed-navbar" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -26,7 +26,7 @@
       </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="fixed-navbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">About</a></li>
         <li><a href="#instruction">Instruction</a></li>
@@ -166,6 +166,43 @@
     <h2>Instruction</h2>
   </div>
   <div class="row">
+    <div class="col-xs-12"></div>
+  </div>
+  <!-- VIDEO CAROUSEL START -->
+  <div id="video-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#video-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#video-carousel" data-slide-to="1"></li>
+      <li data-target="#video-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+          <iframe class="" src="https://www.youtube.com/embed/_m5inQ62wVU" height="100%" width="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="item">
+        <iframe class="" src="https://www.youtube.com/embed/rQjOIAsmzHo" height="100%" width="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="item">
+        <iframe class="" src="https://www.youtube.com/embed/dCqxBlohWvs" height="100%" width="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#video-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#video-carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- VIDEO CAROUSEL END -->
+
+  <div class="row">
     <div class="col-md-4">
       <div class="thumbnail">
         <h3 class="text-center">Heading</h3>
@@ -256,7 +293,7 @@
       <i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel: [Cell Phone]">[Cell Number]</a>
     </div>
     <div class="col-sm-6">
-      <form action="https://formspree.io/[Email Address]" method="POST" class="row">
+      <form action="https://formspree.io/[Email Address]" method="POST">
 
           <label>Name</label>
           <input type="text" name="name" class="form-control"  placeholder="Name" required>
